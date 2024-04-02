@@ -155,6 +155,9 @@ static const Key keys[] = {
     { 0,         XK_Print,	            spawn, SHCMD("/usr/local/bin/screenshot.sh") },
     { ShiftMask, XK_Print,	            spawn, SHCMD("/usr/local/bin/screenshot.sh -s") },
 
+    { MODKEY,             XK_Print,	            spawn, SHCMD("/usr/local/bin/screen_clipb.sh") },
+    { Mod4Mask, XK_Print,	            spawn, SHCMD("/usr/local/bin/screen_clipb.sh -s") },
+
     { ControlMask|ShiftMask, XK_Return, spawn, {.v = redshift} },
     { ControlMask,     	     XK_Return, spawn, {.v = redshiftback} },
     { MODKEY,                XK_space,  spawn, {.v =  keyboarden} },
